@@ -1,0 +1,229 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// common
+body {
+  background: #f2f2f2;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+.container {
+  width: 620px;
+  margin: 0 auto;
+}
+.link {
+  text-decoration: none;
+}
+h3 {
+  font-weight: normal;
+  font-size: 18px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+input[type="text"] {
+  width: 560px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 13px;
+  margin-top: 5px;
+  padding: 0 10px;
+  font-size: 15px;
+}
+input[type="text"].normal {
+  width: 265px;
+}
+textarea {
+  width: 560px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 15px;
+}
+span.red{
+  color: red;
+}
+table th {
+  text-align: left;
+  font-weight: normal;
+  white-space: nowrap;
+}
+table td {
+  white-space: nowrap;
+}
+table {
+  font-size: 14px;
+  border-collapse: collapse;
+}
+.table {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+  padding: 20px 20px 10px;
+}
+.btn {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.submit {
+  background: rgba(0, 80, 192, 0.8);
+  margin-left: 10px;
+  color: #fff;
+}
+.check_box {
+	transform: scale(1.5);
+	margin: 10px 5px 20px;
+}
+//index
+
+.section {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+.list {
+  background: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
+  width: 100%;
+}
+table.list>thead>tr>th {
+  padding: 10px 20px;
+}
+table.list>tbody>tr>td {
+  padding: 18px 20px;
+  border-top:1px solid #ccc;
+}
+.today {
+  margin-right: 20px;
+  font-size: 15px;
+  color: #aaa;
+}
+.sum {
+  margin-left: 20px;
+}
+.count {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+span.bold {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 7px;
+}
+.head .new {
+  color: #fff;
+  background: blue;
+  padding: 10px 25px;
+  font-size: 15px;
+}
+.head i {
+  margin-right: 6px;
+  margin-top: 3px;
+}
+
+//new
+
+//show
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.showtable {
+  background: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
+  width: 90%;
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.showtable table {
+  width: 100%;
+  border: solid 1px #ccc;
+}
+.showtable th {
+  background: #f3f3f3;
+  width: 30%;
+  padding: 19px;
+  border-top: solid 1px #ccc;
+}
+.showtable td {
+  padding-left: 10px;
+  border-top:1px solid #ccc;
+}
+.return {
+  font-size: 13px;
+  margin: 20px 0;
+}
+.edit {
+  border: 1px solid blue;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: blue;
+  cursor: pointer;
+}
+.back {
+  border: none;
+  color: blue;
+  cursor: pointer;
+}
+//edit
+
+td.icon {
+  position: relative;
+}
+.icon i {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.icon .i {
+  position: absolute;
+  right: 317px;
+  top: 20px;
+}
+.startdate {
+  margin-right: 228px;
+}
+
+.notice {
+  background-color: rgba(196, 217, 203, 0.8);
+  padding: 5px 20px;
+  border-radius: 16px;
+  color: #fff;
+ }
+ 
+ .partial {
+   color: #fff;
+   background: rgb(29, 38, 77);
+   text-align: center;
+ }
+ .partial p {
+   margin: 0;
+   padding: 12px 0;
+   font-size: 15px;
+ }
+ 
+ .field_with_errors {
+  display: contents;
+ }
+ 
+ .errors {
+   margin: 0 auto;
+   width: 370px;
+   padding-right: 180px;
+   color: red;
+ }
