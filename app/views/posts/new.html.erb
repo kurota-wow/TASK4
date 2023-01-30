@@ -1,0 +1,64 @@
+<%= render "shared/partial" %>
+<%= render "shared/error", obj: @post %>
+
+<div class="container">
+  <h3>予定の新規追加</h3>
+  <div class="table">
+    <%= form_for @post do |f| %>
+      <table>
+        <tr>
+          <th>
+            <%= f.label :title ,"タイトル" %>
+            <span class="red">*</span>
+          </th>
+        </tr>
+        <tr>
+          <td><%= f.text_field :title, placeholder: "タイトル" %></td>
+        </tr>
+        
+        <tr>
+          <th>
+            <%= f.label :startdate ,"開始日" %>
+            <span class="red startdate">*</span>
+            <%= f.label :enddate ,"終了日" %>
+            <span class="red">*</span>
+          </th>
+        </tr>
+        <tr>
+          <td class="icon">
+            <%= f.text_field :startdate, placeholder: "---- / -- / --" , class: 'date-picker normal' %>
+            <i class="bi bi-calendar i"></i>
+            <%= f.text_field :enddate, placeholder: "---- / -- / --" , class: 'date-picker normal' %>
+            <i class="bi bi-calendar"></i>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <%= f.check_box :mark ,{class: "check_box"} ,"◯", ""%>
+            <%= f.label :mark ,"終日の場合はチェックを入れます" %>
+          </td>
+        </tr>
+        <tr>
+          <th><%= f.label :memo ,"スケジュールメモ" %></th>
+        </tr>
+        <tr>
+          <td><%= f.text_area :memo, placeholder: "メモを入力する" %></td>
+        </tr>
+        
+        
+      </table>
+      <div>
+        <ul>
+          <li>
+            <%=link_to(:posts) do %>
+              <button class="btn" >キャンセル</button>
+            <%end%>
+          </li>
+          <li><%= f.submit "保存" ,{class: "btn submit"}%></li>
+        </ul>
+      </div>
+    <% end %>
+  </div>
+</div>
+

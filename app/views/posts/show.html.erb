@@ -1,0 +1,47 @@
+<%= render "shared/partial" %>
+
+<div class="container">
+  <div class="return">
+    <%=link_to(:posts) do %>
+      <button class="back">
+        <i class="bi bi-arrow-left"></i>
+        一覧に戻る
+      </button>
+    <%end%>
+  </div>
+  
+  <div class="head">
+    <div>
+      <%= @post.title %>
+    </div>
+    
+    <div>
+      <%=link_to(:edit_post) do %>
+        <button class="edit" >
+          <i class="bi bi-pencil-fill"></i>
+          編集
+        </button>
+      <%end%>
+    </div>
+  </div>
+  <div class="showtable">
+    <table>
+      <tr>
+        <th>開始日</th>
+        <td><%= @post.startdate %></td>
+      </tr>
+      <tr>
+        <th>終了日</th>
+        <td><%= @post.enddate %></td>
+      </tr>
+      <tr>
+        <th>終日</th>
+        <td><%= @post.mark %></td>
+      </tr>
+      <tr>
+        <th>スケジュールメモ</th>
+        <td><%= @post.memo %></td>
+      </tr>
+    </table>
+  </div>
+</div>
